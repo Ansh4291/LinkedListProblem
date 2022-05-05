@@ -13,12 +13,15 @@ class Operations {
             head = node;
             tail = node;
         } else {
-            Node temp = head;
-            this.head = node;
-            node.address = temp;
+            Node n = head;
+            while (n.address != null) {
+                n = n.address;
+            }
+            n.address = node;
         }
     }
-//          creating print method
+
+    //          creating print method
     public void print() {
         if (head == null) {
             System.out.println("Linked List Is Empty");

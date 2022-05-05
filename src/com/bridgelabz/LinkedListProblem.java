@@ -7,9 +7,9 @@ public class LinkedListProblem {
         //taking object of operation class
         //and passing the data
         Operations operations = new Operations();
-        operations.add(70);
-        operations.add(30);
         operations.add(56);
+        operations.add(30);
+        operations.add(70);
         //Calling the print method inside main method
         operations.print();
     }
