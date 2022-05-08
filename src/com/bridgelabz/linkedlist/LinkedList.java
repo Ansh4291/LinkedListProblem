@@ -15,9 +15,9 @@ public class LinkedList {
                 this.head = newNode;
                 newNode.next = temp;
             }
-
             return newNode;
         }
+
     // Displaying element of Linked List
         public void print() {
             Node temp = head;
@@ -47,5 +47,12 @@ public class LinkedList {
             previousNode.next = newNode;
             newNode.next = tempNode;
         }
+    public void pop(){
+        if (head != null){
+            Node temp = head;
+            head = head.next;
+//            return;
+        }
+    }
     }
 
