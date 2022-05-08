@@ -14,6 +14,7 @@ public class LinkedListProblem {
             System.out.println("Press 2 to add the data at end ");
             System.out.println("Press 3 to add the data at insert in between ");
             System.out.println("Press 4 to delete the element");
+            System.out.println("Press 5 to delete last element");
             int chooseNumber = sc.nextInt();
 
             switch (chooseNumber) {
@@ -24,10 +25,13 @@ public class LinkedListProblem {
                     Operations.addDataAtEnd();
                     break;
                 case 3:
-                    Operations.insertInBetween();
+//                    Operations.insertInBetween();
                     break;
                 case 4:
                     Operations.deleteElement();
+                    break;
+                case 5:
+                    Operations.deleteLastNode();
                     break;
                 default:
                     System.out.println("Invalid Input");

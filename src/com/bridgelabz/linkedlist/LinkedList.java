@@ -4,19 +4,21 @@ public class LinkedList {
 
         Node head;
         Node tail;
+        Node prev;
+
     // push element into linked list
-        public Node push(int data) {
-            Node newNode = new Node(data);
-            if (head == null) {
-                head = newNode;
-                tail = newNode;
-            } else {
-                Node temp = head;
-                this.head = newNode;
-                newNode.next = temp;
-            }
-            return newNode;
+    public void push(int data){
+        Node node = new Node(data);
+        if (head == null){
+            head = node;
+            tail = node;
+        }else {
+            Node temp = head;
+            this.head = node;
+            node.next = temp;
         }
+//        return node;
+    }
 
     // Displaying element of Linked List
         public void print() {
@@ -51,8 +53,30 @@ public class LinkedList {
         if (head != null){
             Node temp = head;
             head = head.next;
-//            return;
         }
     }
+//
+public  Node removeLastNode() {
+
+    if (head == null)
+        return null;
+
+    if (head.next == null) {
+        return null;
+    }
+
+    // Find the second last node
+    Node second_last = head;
+    while (second_last.next.next != null)
+        second_last = second_last.next;
+//    int pos;
+//    for (int i = 0; i < pos-1; i++){
+//        second_last = second_last.next;
+//        }
+    // Change next of second last
+    second_last.next = null;
+
+    return head;
+}
     }
 

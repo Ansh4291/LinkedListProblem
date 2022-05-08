@@ -1,6 +1,6 @@
 package com.bridgelabz.linkedlist;
 
-class Node {
+public class Node {
 
         public int data;
         public Node next;
@@ -11,7 +11,7 @@ class Node {
         }
     @Override
     public String toString() {
-        return "Node{" +
+        return "MyStack{" +
                 "data=" + data +
                 ", next=" + next +
                 '}';

@@ -25,23 +25,30 @@ class Operations {
     /*
  Created a method to add data in between.
   */
-    public static void insertInBetween() {
-        LinkedList linkedList = new LinkedList();
-        Node secondNode = linkedList.push(70);
-        Node firstNode = linkedList.push(56);
-        Node newNode= new Node(30);
-        System.out.println("Before insert");
-        linkedList.print();
-        linkedList.insertInBetween(firstNode, newNode);
-        System.out.println("");
-        System.out.println("after insert");
-        linkedList.print();
-        System.out.println("");
-    }
+//    public static void insertInBetween() {
+//        LinkedList linkedList = new LinkedList();
+//        Node secondNode = linkedList.
+//        Node firstNode = linkedList.push(56);
+//        Node newNode= new Node(30);
+//        System.out.println("Before insert");
+//        linkedList.print();
+//        linkedList.insertInBetween(firstNode, newNode);
+//        System.out.println("");
+//        System.out.println("after insert");
+//        linkedList.print();
+//        System.out.println("");
+//    }
 
     public static void deleteElement(){
        LinkedList linkedList = new LinkedList();
        linkedList.pop();
+       linkedList.print();
+    }
+    public static void deleteLastNode(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.removeLastNode();
+        linkedList.print();
+
 
     }
 
