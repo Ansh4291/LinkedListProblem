@@ -10,13 +10,21 @@ public class StackByUsingLL {
         int ans;
         do {
             System.out.println("Press 1 to push operation");
-            System.out.println("Press 2 to display operation");
+            System.out.println("Press 2 to pop operation");
+            System.out.println("Press 3 to peek operation");
+            System.out.println("Press 4 to display operation");
             chooseNo = sc.nextInt();
             switch (chooseNo) {
                 case 1:
                     operation.push(sc);
                     break;
                 case 2:
+                    operation.pop();
+                    break;
+                case 3:
+                   operation.peek();
+                    break;
+                case 4:
                     operation.display();
                     break;
                 default:
